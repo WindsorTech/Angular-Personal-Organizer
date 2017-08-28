@@ -1,0 +1,10 @@
+.container {
+		border-style: double;
+		margin-top: 50px;
+	}
+
+.nav-tabs {
+		padding-left: 450px;
+		margin-top: 30px;
+		color: white;
+	}

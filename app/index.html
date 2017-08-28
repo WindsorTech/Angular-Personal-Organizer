@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Angular To-Do List</title>
+
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	<link rel="stylesheet" href="todoList/layout/assets/styles/layout.css">
+
+</head>
+<body style="background-color:#cfcfd1">
+
+	<div class="container">
+
+		<div class="page-header" align="center">
+	 	 	<h2>AngularJS To-Do List</h2>
+
+			<ul class="nav nav-tabs">
+	  			<li role="presentation" align="center"><a href="/list">List</a></li>
+	  			<li role="presentation" class="active"><a href="/create">Create</a></li>
+	  			<li role="presentation"><a href="/completed">Completed</a></li>
+		 	</ul>
+
+		 	<ui-view></ui-view>
+
+		 </div>
+
+		 	<p class="bg-primary" align="center">CONTENT</p>
+			<p class="bg-success" align="center">GOES</p>
+			<p class="bg-info" align="center">HERE</p>
+			<p class="bg-warning" align="center">COMING</p>
+			<p class="bg-danger" align="center">SOON</p>
+
+	</div>
+
+	<!-- Scripts of the App's JS Files-->
+	<script src="todoList/todoList.module.js"></script>
+
+    <script src="todoList/features/create/create.module.js"></script>
+    <script src="todoList/features/create/create.controller.js"></script>
+    <script src="todoList/features/create/create.route.js"></script>
+
+    <script src="todoList/features/completed/completed.module.js"></script>
+    <script src="todoList/features/completed/completed.controller.js"></script>
+    <script src="todoList/features/completed/completed.route.js"></script>
+
+    <script src="todoList/features/list/list.module.js"></script>
+    <script src="todoList/features/list/list.controller.js"></script>
+    <script src="todoList/features/list/list.route.js"></script>
+
+    <script src="db/tododata.js"></script>
+
+</body>
+</html>

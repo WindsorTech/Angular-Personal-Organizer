@@ -1,0 +1,25 @@
+{
+  "name": "angular-to-do-list",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/windsor80/angular-to-do-list.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/windsor80/angular-to-do-list/issues"
+  },
+  "homepage": "https://github.com/windsor80/angular-to-do-list#readme",
+  "dependencies": {
+    "express": "^4.15.2",
+    "mongoose": "^4.8.6"
+  },
+  "devDependencies": {}
+}
