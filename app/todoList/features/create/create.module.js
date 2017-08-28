@@ -1,13 +1,8 @@
-// Here we define out dashboard module
+// Here we define out Create module
 // Notice the naming convention!!!
 // appName.featureName
 
 angular.module('todoList.create', [
-
-	//'createAHero.component.storyContent',
-
-	//'createAHero.component.library'
-
 	
     // This module does not have any dependencies so an empty array here!
     // Note, we still have to include the array as we are defining the module.

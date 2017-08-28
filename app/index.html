@@ -8,8 +8,12 @@
 
 	<link rel="stylesheet" href="todoList/layout/assets/styles/layout.css">
 
+	<!-- Angular Scripts -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular.min.js"></script>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.4.2/angular-ui-router.min.js"></script>
 </head>
-<body style="background-color:#cfcfd1">
+<body ng-app="todoList">
 
 	<div class="container">
 
@@ -34,17 +38,20 @@
 
 	</div>
 
-	<!-- Scripts of the App's JS Files-->
+	<!-- Scripts of the Main Module File-->
 	<script src="todoList/todoList.module.js"></script>
 
+	<!-- Scripts of the Create state -->
     <script src="todoList/features/create/create.module.js"></script>
     <script src="todoList/features/create/create.controller.js"></script>
     <script src="todoList/features/create/create.route.js"></script>
 
+	<!-- Scripts of the Completed state -->
     <script src="todoList/features/completed/completed.module.js"></script>
     <script src="todoList/features/completed/completed.controller.js"></script>
     <script src="todoList/features/completed/completed.route.js"></script>
 
+	<!-- Scripts of the List state -->
     <script src="todoList/features/list/list.module.js"></script>
     <script src="todoList/features/list/list.controller.js"></script>
     <script src="todoList/features/list/list.route.js"></script>
