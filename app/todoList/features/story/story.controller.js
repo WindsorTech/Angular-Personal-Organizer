@@ -1,11 +1,11 @@
 angular
-    .module('todoList.create') 
+    .module('todoList.story') 
     // No array, as we are "extending" the module
-    .controller('CreateCtrl', CreateCtrl); 
+    .controller('StoryCtrl', StoryCtrl); 
     // Define our controller (Notice the naming convention - 
     // uppercase first letter, Ctrl suffix)
 
-function CreateCtrl($scope, $http) {
+function StoryCtrl($stateParams) {
 	// vm stands for View Model - anything on "the vm" 
     // is exposed to the view
 
@@ -16,19 +16,11 @@ function CreateCtrl($scope, $http) {
 
     var vm = this; 
 
-    vm.books = [ 
-		{
-		taskName : 'Coding',
-    	dueDate : '05/05/2005',
-    	opinion : 'Relaxing'
-		},
-
-		{
-		taskName : 'Lekson',
-    	dueDate : '09/09/2009',
-    	opinion : 'Wonderful'
-		} 
-    ];
+    vm.story = {
+        taskName: $stateParams.taskName,
+        dueDate: $stateParams.dueDate,
+        opinion: $stateParams.opinion
+    }
 
     // vm.taskName = '';
     // vm.dueDate = '';

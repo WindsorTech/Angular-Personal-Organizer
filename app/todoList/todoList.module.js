@@ -7,7 +7,8 @@ angular
         // Features - modules that are dependencies
         'todoList.list',
         'todoList.create',
-        'todoList.completed'
+        'todoList.completed',
+        'todoList.story'
     ])
     .config(appConfig);
 

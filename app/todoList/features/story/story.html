@@ -1,9 +1,32 @@
-<div class="flex">	
-	<book ng-repeat="book in CreateVM.books"
-	      ng-class="{female: book.opinion === 'Wonderful'}"
-	      ui-sref="story"
-		  book-data="book">			
-	</book>
+<div class="flex">
+
+	<div class="openbook">
+
+		<div class="left">
+
+			<span class="page-corner" 
+			      ui-sref="create"></span>
+
+			<h1 class="page-header">A HERO'S STORY</h1>
+			
+				<span ng-if="StoryVM.story.taskName !== ''">
+				Your next task is {{StoryVM.story.taskName}}. What an {{StoryVM.story.opinion}} activity!
+				</span>
+				<br>
+				<span ng-if="StoryVM.story.dueDate !== '' && StoryVM.story.taskName !== ''">
+				The task is due on {{StoryVM.story.dueDate}}. Good luck!
+				</span>
+
+
+		</div>
+
+		<div class="right">
+			<div class="page-content"></div>
+			
+		</div>
+		
+	</div> 	
+
 </div>
 
 

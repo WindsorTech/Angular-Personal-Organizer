@@ -1,9 +1,9 @@
 angular
-    .module('todoList.create') 
+    .module('todoList.story') 
     // No array, as we are "extending" the module
-    .config(createConfig);
+    .config(storyConfig);
 
-function createConfig($stateProvider) {
+function storyConfig($stateProvider) {
     // $stateProvider is an Angular service exposed 
     // by the ui-router library
     // this service allows us to define the "states" 
@@ -13,13 +13,13 @@ function createConfig($stateProvider) {
     // This means we don't have the concept of "pages" but 
     // instead we use the concepts of "states"
     $stateProvider.state({
-        name: 'create', // name of the route
-        url: '/create', // url endpoint for the route
-        templateUrl: '/todoList/features/create/create.html', 
+        name: 'story', // name of the route
+        url: '/story?taskName&dueDate&opinion', // url endpoint for the route
+        templateUrl: '/todoList/features/story/story.html', 
         // The url to the View template
-        controller: 'CreateCtrl', 
+        controller: 'StoryCtrl', 
         // The name of the controller to use for this route
-        controllerAs: 'CreateVM' 
+        controllerAs: 'StoryVM' 
         // The namespace for the view to access the view model
     })
 }
