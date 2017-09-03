@@ -18,15 +18,15 @@ function CreateCtrl($scope, $http) {
 
     vm.books = [ 
 		{
-		taskName : 'Coding',
-    	dueDate : '05/05/2005',
-    	opinion : 'Relaxing'
+		taskName: 'Coding',
+    	dueDate: '05/05/2005',
+    	opinion: 'Relaxing'
 		},
 
 		{
-		taskName : 'Lekson',
-    	dueDate : '09/09/2009',
-    	opinion : 'Wonderful'
+		taskName: 'Lekson',
+    	dueDate: '09/09/2009',
+    	opinion: 'Wonderful'
 		} 
     ];
 

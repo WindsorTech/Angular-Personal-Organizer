@@ -1,7 +1,7 @@
 <div class="flex">	
 	<book ng-repeat="book in CreateVM.books"
 	      ng-class="{female: book.opinion === 'Wonderful'}"
-	      ui-sref="story"
+	      ui-sref="story(book)"
 		  book-data="book">			
 	</book>
 </div>

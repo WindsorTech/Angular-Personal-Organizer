@@ -9,6 +9,7 @@ angular
         'todoList.create',
         'todoList.completed',
         'todoList.story'
+
     ])
     .config(appConfig);
 
