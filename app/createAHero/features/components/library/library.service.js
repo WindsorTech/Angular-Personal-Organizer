@@ -18,7 +18,7 @@ function LibraryService($http) {
         books.push(bookData);
         $http({
             method: 'POST',
-            url: 'http://localhost:3000/library',
+            url: 'https://localhost:3000/library',
             data: bookData
         }).then(function(response) {
             
