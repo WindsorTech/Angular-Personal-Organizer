@@ -7,7 +7,7 @@ function LibraryService($http) {
 
     $http({
         method: 'GET',
-        url: 'http://localhost:3000/library'
+        url: 'https://localhost:3000/library'
     }).then(function(response) {
         response.data.forEach(function(item) {
             books.push(item);
