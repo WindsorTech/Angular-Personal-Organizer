@@ -1,3 +1,26 @@
+.container {
+        border-style: double;
+        margin-top: 50px;
+    }
+
+.nav-tabs {
+        padding-left: 350px;
+        margin-top: 30px;
+        color: white;
+    }
+
+h2, h3 {
+    font-family: 'Merriweather Sans', sans-serif;
+}
+
+ul {
+    font-size: 16px;
+}
+
+.create {
+    font-size: 16px;
+}
+
 /* A little preparation first */
 *,
 *:before,
@@ -17,8 +40,7 @@ body {
 }
 
 body {
-    font-family: 'Open Sans', Arial, sans-serif;
-    background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/16584/retina_wood.png');
+    font-family: 'Merriweather Sans', sans-serif;
 }
 
 /* To ease up layouting a little, I use flexbox */

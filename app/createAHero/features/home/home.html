@@ -1,8 +1,44 @@
-<div class="flex">
+	 <div class="container">
+
+		<div class="page-header" align="center">
+	 	 	<h2>AngularJS Personal Organizer</h2>
+
+			<ul class="nav nav-tabs">
+	  			<li role="presentation" align="center"><a href="/list">List</a></li>
+	  			<li role="presentation" class="active"><a href="/create">Create</a></li>
+	  			<li role="presentation"><a href="/completed">Completed</a></li>
+		 	</ul>		 	
+		 </div>
+
+		 <div class="create" align="center">
+		 		<h3>Add a New Task</h3>
+		 		<form>
+			    Task: <input type="text" ng-model="CreateVM.taskName" placeholder="What do you want to do?">
+			    <br>
+			    Due Date: <input type="date" ng-model="CreateVM.dueDate">
+			    <br>
+			    <button type="button">Create Task</button>
+			    </form>
+
+			    <hr>
+	
+				<span ng-if="CreateVM.taskName !== ''">
+				Your next task is {{CreateVM.taskName}}. What an {{CreateVM.opinion}} activity!
+				</span>
+				<br>
+				<span ng-if="CreateVM.dueDate !== '' && CreateVM.taskName !== ''">
+				The task is due on {{CreateVM.dueDate}}. Good luck!
+				</span>
+		</div>
+
+	</div>
+
+
+	<!--<div class="flex">
     <book ng-repeat="book in HomeVM.books"
           book-data="book"
           ng-class="{female: book.heroGender === 'female'}"
           ui-sref="story(book)">
     </book>
     <a ui-sref="dashboard">Go to dashboard</a>
-</div>
+</div> -->
