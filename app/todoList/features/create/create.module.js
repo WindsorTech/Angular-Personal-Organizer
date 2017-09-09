@@ -2,8 +2,6 @@
 // Notice the naming convention!!!
 // appName.featureName
 
-angular.module('createAHero.home', [
+angular.module('todoList.create', [
     // Here we define the modules dependencies
-    'createAHero.component.book',
-    'createAHero.component.library'
 ]);
