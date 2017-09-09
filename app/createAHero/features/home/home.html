@@ -2,26 +2,28 @@
 
 		<div class="page-header" align="center">
 	 	 	<h2>AngularJS Personal Organizer</h2>
-
 			<ul class="nav nav-tabs">
-	  			<li role="presentation" align="center"><a href="/list">List</a></li>
-	  			<li role="presentation" class="active"><a href="/create">Create</a></li>
-	  			<li role="presentation"><a href="/completed">Completed</a></li>
-		 	</ul>		 	
+	  			<li role="presentation" align="center"><a href="/list">List All Tasks</a></li>
+	  			<li role="presentation" class="active"><a href="/create">Create Task</a></li>
+	  			<li role="presentation"><a href="/completed">View Completed Tasks</a></li>
+		 	</ul>	 	
 		 </div>
 
 		 <div class="create" align="center">
 		 		<h3>Add a New Task</h3>
 		 		<form>
-			    Task: <input type="text" ng-model="CreateVM.taskName" placeholder="What do you want to do?">
+			    What do you want to do?
 			    <br>
-			    Due Date: <input type="date" ng-model="CreateVM.dueDate">
+  				<input type="text" ng-model="CreateVM.taskName" placeholder="Insert Task Here" align="center">
 			    <br>
-			    <button type="button">Create Task</button>
+			    Due Date:
+			    <br>
+			    <input type="date" ng-model="CreateVM.dueDate">
+			    <br>
+			    <button type="button" class="btn btn-primary btn-sm">Create Task</button>
 			    </form>
 
 			    <hr>
-	
 				<span ng-if="CreateVM.taskName !== ''">
 				Your next task is {{CreateVM.taskName}}. What an {{CreateVM.opinion}} activity!
 				</span>

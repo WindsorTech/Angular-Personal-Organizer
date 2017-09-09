@@ -1,13 +1,27 @@
+html,
+body {
+    height: 100%;
+}
+
+body {
+    font-family: 'Merriweather Sans', sans-serif;
+}
+
 .container {
         border-style: double;
         margin-top: 50px;
     }
 
 .nav-tabs {
-        padding-left: 350px;
         margin-top: 30px;
-        color: white;
+        text-align:center;
     }
+
+.nav-tabs > li {
+    float:none;
+    display:inline-block;
+    zoom:1;
+}
 
 h2, h3 {
     font-family: 'Merriweather Sans', sans-serif;
@@ -21,6 +35,15 @@ ul {
     font-size: 16px;
 }
 
+input {
+    text-align: center;
+    font-size: 15px;
+}
+
+button {
+    margin-top: 5px;
+}
+
 /* A little preparation first */
 *,
 *:before,
@@ -32,15 +55,6 @@ ul {
 *::before,
 *::after {
     content: '';
-}
-
-html,
-body {
-    height: 100%;
-}
-
-body {
-    font-family: 'Merriweather Sans', sans-serif;
 }
 
 /* To ease up layouting a little, I use flexbox */
