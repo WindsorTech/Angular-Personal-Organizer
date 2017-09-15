@@ -6,4 +6,9 @@ function CreateCtrl() {
     var vm = this; // vm stands for View Model - anything on "the vm" is exposed to the view
 
     //vm.books = library.books;
+
+         vm.task = {
+            taskName: 'Comer Buceta',
+            dueDate: '05/05/2005'
+        };
 }

@@ -10,7 +10,7 @@ function listConfig($stateProvider) {
     // don't have the concept of "pages" but instead we use the concepts of "states"
     $stateProvider.state({
         name: 'list', // name of the route
-        url: '/list', // url endpoint for the route
+        url: '/list?taskName&dueDate', // url endpoint for the route
         templateUrl: '/todoList/features/list/list.html', // The url to the view template
         controller: 'ListCtrl', // The name of the controller to use for this route
         controllerAs: 'ListVM' // The namespace for the view to access the view model

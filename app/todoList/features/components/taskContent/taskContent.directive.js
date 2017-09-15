@@ -16,5 +16,12 @@ function TaskContent() {
 }
 
 function TaskContentCtrl() {
+
+		var vm = this;
+
+	    vm.task = {
+            taskName: 'Comer Buceta',
+            dueDate: '05/05/2005'
+        };
 	
 }
