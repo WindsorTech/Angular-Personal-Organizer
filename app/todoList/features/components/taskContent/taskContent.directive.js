@@ -15,13 +15,18 @@ function TaskContent() {
 	}
 }
 
-function TaskContentCtrl() {
+function TaskContentCtrl($stateParams) {
 
 		var vm = this;
 
-	    vm.task = {
-            taskName: 'Comer Buceta',
-            dueDate: '05/05/2005'
-        };
+		vm.task = {
+        	taskName: $stateParams.taskName,
+        	dueDate: $stateParams.dueDate
+    	};
+
+	    // vm.task = {
+     //        taskName: 'Comer Buceta',
+     //        dueDate: '05/05/2005'
+     //    };
 	
 }
