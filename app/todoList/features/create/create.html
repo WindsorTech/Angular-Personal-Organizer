@@ -14,16 +14,15 @@
 		 		<form>
 			    What do you need to do?
 			    <br>
-  				<input type="text" ng-model="CreateVM.taskName" placeholder="Insert Task Here" align="center">
+  				<input type="text" ng-model="CreateVM.task.taskName" placeholder="Insert Task Here" align="center">
 			    <br>
 			    Due Date:
 			    <br>
-			    <input type="date" ng-model="CreateVM.dueDate">
+			    <input type="date" ng-model="CreateVM.task.dueDate">
 			    <br>
 			    <button type="button" class="btn btn-primary" ng-click="CreateVM.addTask()">Create Task</button>
 			    </form>
-
-			    <task-content></task-content task-data="CreateVM.task">
+			    <br>
 		</div>
 
 	</div>

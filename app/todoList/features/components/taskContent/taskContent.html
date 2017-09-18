@@ -1,6 +1,7 @@
 <!-- ng-if is also a built-in angular directive -->
-<span class="create">
-    <!-- {{}} is angular templating syntax StoryVM is defined in our directive.js as the "ControllerAs" -->
+<span class="create" ng-if="TaskContentVM.taskData.taskName !== ''">
+    <!-- {{}} is angular templating syntax StoryVM is defined in our directive.js as the "ControllerAs" 
+	-->
     Your next task is <b>{{TaskContentVM.taskData.taskName}}</b>. This motherfucker is due on <b>{{TaskContentVM.taskData.dueDate}}</b>. Hurry up!
     <br>
     <br>

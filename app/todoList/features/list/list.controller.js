@@ -9,13 +9,6 @@ function ListCtrl(library) {
 
 }
 
-    // vm.task = {
-    //     taskName: $stateParams.taskName,
-    //     dueDate: $stateParams.dueDate
-    // }
-
-//$scope, $http, library
-
 
 
 
