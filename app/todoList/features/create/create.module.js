@@ -4,5 +4,6 @@
 
 angular.module('todoList.create', [
     // Here we define the modules dependencies
-    'todoList.component.taskContent'
+    'todoList.component.taskContent',
+    'todoList.component.library'
 ]);

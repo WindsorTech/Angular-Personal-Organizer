@@ -6,7 +6,7 @@ function TaskContent() {
 	return  {
 		restrict: 'E',
 		scope: {
-			taskData: '='
+			taskData: '=' // to be used as task-data
 		},
 		templateUrl: '/todoList/features/components/taskContent/taskContent.html',
 		controller: TaskContentCtrl,
@@ -15,18 +15,6 @@ function TaskContent() {
 	}
 }
 
-function TaskContentCtrl($stateParams) {
+function TaskContentCtrl() {
 
-		var vm = this;
-
-		vm.task = {
-        	taskName: $stateParams.taskName,
-        	dueDate: $stateParams.dueDate
-    	};
-
-	    // vm.task = {
-     //        taskName: 'Comer Buceta',
-     //        dueDate: '05/05/2005'
-     //    };
-	
 }

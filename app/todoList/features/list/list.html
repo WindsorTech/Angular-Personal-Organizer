@@ -11,12 +11,20 @@
 
          <!-- SECTION DIVISION  -->
 
-         <task-content></task-content task-data="ListVM.list">
+         <task-content ng-repeat="task in ListVM.tasks"
+                       task-data="task"
+         ></task-content>
 
     </div>
 
 
 <!--
+
+        <book ng-repeat="book in HomeVM.books"
+          book-data="book"
+          ng-class="{female: book.heroGender === 'female'}"
+          ui-sref="story(book)">
+        </book>
 
 <story-content story-data="DashboardVM.story"></story-content>
 

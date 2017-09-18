@@ -22,16 +22,8 @@
 			    <br>
 			    <button type="button" class="btn btn-primary" ng-click="CreateVM.addTask()">Create Task</button>
 			    </form>
-			    <!-- ng-click="DashboardVM.addBook()" -->
 
-			    <hr>
-				<span ng-if="CreateVM.taskName !== ''">
-				Your next task is {{CreateVM.taskName}}. What an {{CreateVM.opinion}} activity!
-				</span>
-				<br>
-				<span ng-if="CreateVM.dueDate !== '' && CreateVM.taskName !== ''">
-				The task is due on {{CreateVM.dueDate}}. Good luck!
-				</span>
+			    <task-content></task-content task-data="CreateVM.task">
 		</div>
 
 	</div>
