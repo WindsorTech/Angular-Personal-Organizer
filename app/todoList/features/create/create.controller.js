@@ -7,7 +7,7 @@ function CreateCtrl($scope, $http, library) {
 
     resetView();
 
-   function resetView () {
+   function resetView() {
    		vm.task = {
    			taskName: '',
    			dueDate: ''

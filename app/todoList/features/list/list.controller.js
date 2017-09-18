@@ -6,7 +6,13 @@ function ListCtrl(library) {
     var vm = this; 
 
     vm.tasks = library.tasks;
+
 }
+
+    // vm.task = {
+    //     taskName: $stateParams.taskName,
+    //     dueDate: $stateParams.dueDate
+    // }
 
 //$scope, $http, library
 
