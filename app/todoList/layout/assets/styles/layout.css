@@ -43,6 +43,10 @@ button {
     margin-top: 5px;
 }
 
+.info {
+    text-align: center;
+}
+
 /* To ease up layouting a little, I use flexbox */
 .flex {
     display: flex;
