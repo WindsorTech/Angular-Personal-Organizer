@@ -7,6 +7,9 @@ function CreateCtrl($scope, library, $stateParams) {
 
     resetView();
 
+    $('.alert-success').hide();
+    $('.alert-danger').hide();
+
     vm.task = {
         taskName: $stateParams.taskName,
         dueDate: $stateParams.dueDate
@@ -21,7 +24,20 @@ function CreateCtrl($scope, library, $stateParams) {
 
    vm.addTask = function() {
    	 library.addTask(vm.task);
-   	 resetView();
+     console.log(vm.task.dueDate);
+
+     if (vm.task.taskName == undefined || vm.task.dueDate == undefined) {
+      $('.alert-danger').show();
+     } else {
+      $('.alert-success').show();
+      resetView();
+     }
+
    }
+
+   $(".close").click(function(){
+      $('.alert-success').hide();
+      $('.alert-danger').hide();
+   });
     
 }
