@@ -17,5 +17,4 @@ function TaskContent() {
 
 function TaskContentCtrl() {
 
-
 }

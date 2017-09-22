@@ -5,8 +5,6 @@ angular
 function CreateCtrl($scope, library, $stateParams) {
     var vm = this; // vm stands for View Model - anything on "the vm" is exposed to the view
 
-    $('.close').hide();
-
     resetView();
 
     vm.task = {
@@ -22,7 +20,6 @@ function CreateCtrl($scope, library, $stateParams) {
    }
 
    vm.addTask = function() {
-
    	 library.addTask(vm.task);
    	 resetView();
    }
