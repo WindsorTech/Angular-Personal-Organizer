@@ -17,8 +17,8 @@ function CreateCtrl($scope, library, $stateParams) {
 
    function resetView() {
    		vm.task = {
-   			taskName: '',
-   			dueDate: ''
+   			taskName: undefined,
+   			dueDate: undefined
    		}
    }
 
@@ -32,10 +32,8 @@ function CreateCtrl($scope, library, $stateParams) {
      } else {
       $('.alert-danger').show();
       $('.alert-success').hide();
+      resetView();
      }
-
-     console.log(vm.task.taskName);
-     console.log(vm.task.dueDate);
 
    }
 
