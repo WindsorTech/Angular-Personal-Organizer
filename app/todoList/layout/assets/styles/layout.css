@@ -32,6 +32,12 @@ h2, h3 {
     font-family: 'Merriweather Sans', sans-serif;
 }
 
+.copyright {
+    font-size: 18px;
+    color: #999999;
+
+}
+
 ul {
     font-size: 18px;
 }
