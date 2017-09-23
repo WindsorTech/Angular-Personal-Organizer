@@ -1,4 +1,4 @@
-<table class="table table-striped table-hover create" style="width:80%" align="center" ng-if="TaskContentVM.taskData.taskName !== undefined && TaskContentVM.taskData.dueDate !== undefined">
+<table class="table table-striped table-hover create" style="width:80%" align="center" ng-if="TaskContentVM.taskData.taskName !== undefined || TaskContentVM.taskData.dueDate !== undefined">
    <tr class="info">
     <td> <b>Task:</b> {{TaskContentVM.taskData.taskName}}</td>
     <td><b>Due Date:</b> {{TaskContentVM.taskData.dueDate | date:'MM-dd-yyyy'}}</td>

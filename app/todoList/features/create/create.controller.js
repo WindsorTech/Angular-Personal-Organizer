@@ -23,15 +23,19 @@ function CreateCtrl($scope, library, $stateParams) {
    }
 
    vm.addTask = function() {
-   	 library.addTask(vm.task);
-     console.log(vm.task.dueDate);
 
-     if (vm.task.taskName == undefined || vm.task.dueDate == undefined) {
-      $('.alert-danger').show();
-     } else {
+     if (vm.task.taskName !== undefined && vm.task.dueDate !== undefined) {
       $('.alert-success').show();
+      $('.alert-danger').hide();
+      library.addTask(vm.task);
       resetView();
+     } else {
+      $('.alert-danger').show();
+      $('.alert-success').hide();
      }
+
+     console.log(vm.task.taskName);
+     console.log(vm.task.dueDate);
 
    }
 
