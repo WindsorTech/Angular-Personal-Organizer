@@ -41,7 +41,7 @@ db.once("open", function() {
 
 app.get("/api/todos", function(req, res) {
 
-	TodoSchema.find({}, function(err, data){
+	ToDo.find({}, function(err, data){
         if (err) return handleError(err); 
           	res.json(data);
     });
