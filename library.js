@@ -1,11 +1,8 @@
 module.exports = {
-	books: [
+	tasks: [
 		{
-			heroName: 'Kody',
-            heroGender: '',
-            heroCity: '',
-            heroFights: '',
-            heroFightsOutcome: ''
+			taskName: '',
+            dueDate: ''
 		}
 	]
 }

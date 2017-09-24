@@ -3,7 +3,7 @@ var mongoose = require("mongoose");
 var Schema = mongoose.Schema;
 
 
-var TodoSchema = new Schema({
+var TaskSchema = new Schema({
   
   todo: {
     type: String
@@ -15,7 +15,7 @@ var TodoSchema = new Schema({
 });
 
 
-var Todo = mongoose.model("ToDo", TodoSchema);
+var Todo = mongoose.model("ToDo", TaskSchema);
 
 
 module.exports = Todo;

@@ -6,7 +6,7 @@ app.use(bodyParser.json());
 
 var mongoose = require('mongoose');
 
-var database = require("./db/tododata.js");
+var database = require("./db/task-database.js");
 
 
 require('./api/get-library')(app);
@@ -25,7 +25,8 @@ app.listen(port, function() {
 mongoose.Promise = Promise;
 
 // Mongoose Database Config
-mongoose.connect("mongodb://heroku_rlc0vsvm:i8vrf1akv1hs3q6eltmqlf2mtb@ds121190.mlab.com:21190/heroku_rlc0vsvm");
+mongoose.connect("mongodb://heroku_8mkc7nl7:5j8nnk4ta9lpih6ktmatsg1cqa@ds149144.mlab.com:49144/heroku_8mkc7nl7");
+
 var db = mongoose.connection;
 
 db.on("error", function(error) {
@@ -36,7 +37,7 @@ db.once("open", function() {
   console.log("Mongoose connection successful.");
 });
 
-// Routes
+// Database Routes
 
 app.get("/api/todos", function(req, res) {
 
