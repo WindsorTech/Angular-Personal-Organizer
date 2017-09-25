@@ -1,8 +1,8 @@
 module.exports = {
 	tasks: [
 		{
-			taskName: '',
-            dueDate: ''
+			taskName: 'Rock in Rio',
+            dueDate: 'Today'
 		}
 	]
 }
