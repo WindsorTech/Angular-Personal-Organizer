@@ -6,7 +6,7 @@ app.use(bodyParser.json());
 
 var mongoose = require('mongoose');
 
-var database = require("./db/task-database.js");
+var Todo = require('./db/task-database.js');
 
 
 require('./api/get-library')(app);
@@ -41,7 +41,7 @@ db.once("open", function() {
 
 app.get("/api/todos", function(req, res) {
 
-	ToDo.find({}, function(err, data){
+	Todo.find({}, function(err, data){
         if (err) return handleError(err); 
           	res.json(data);
     });
@@ -50,7 +50,7 @@ app.get("/api/todos", function(req, res) {
 
 app.put("/api/todo", function(req, res) {
 
-	 ToDo.findByIdAndUpdate(req.body._id, {completed: req.body.completed}, function(err, post){
+	 Todo.findByIdAndUpdate(req.body._id, {completed: req.body.completed}, function(err, post){
           if(err) return next(err);
             console.log(post);
             res.send(200);
@@ -71,3 +71,7 @@ app.post("/api/todo", function(req, res) {
         });
 
 });
+
+// app.get("/", function(req, res) {
+//   res.send("index.html");
+// });

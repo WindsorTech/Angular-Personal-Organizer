@@ -2,11 +2,11 @@ var mongoose = require("mongoose");
 
 var Schema = mongoose.Schema;
 
-
 var TaskSchema = new Schema({
   
   todo: {
-    type: String
+    type: String,
+    trim: true
   },
   
   completeBy: {
@@ -15,7 +15,7 @@ var TaskSchema = new Schema({
 });
 
 
-var Todo = mongoose.model("ToDo", TaskSchema);
+var Todo = mongoose.model("Todo", TaskSchema);
 
 
 module.exports = Todo;
