@@ -1,8 +1,8 @@
-var library = require('../library');
+var library = require('../db/task-database.js');
 
 module.exports = function(app) {
 	app.post('/library', function(req, res) {
-		library.tasks.push(req.body);
-		res.send(library.tasks);
+		library.Todo.push(req.body);
+		res.send(library.Todo);
 	});
 }
