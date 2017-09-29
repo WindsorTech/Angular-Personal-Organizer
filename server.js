@@ -12,7 +12,10 @@ var Todo = require('./db/task-database.js');
 require('./api/get-library')(app);
 require('./api/post-library')(app);
 
-app.use(express.static(__dirname + "/app"));
+// This line directs the server to the Angular App
+// app.use(express.static(__dirname + "/app"));
+
+//app.use("/", express.static(__dirname));
 
 
 //PORT
@@ -72,6 +75,10 @@ app.post("/api/todo", function(req, res) {
 
 });
 
-// app.get("/", function(req, res) {
-//   res.send("index.html");
-// });
+app.get("/", function(req, res) {
+  // res.send('app/index.html');
+  //res.render('/app/index.html');
+  //res.sendFile('/app/index.html');
+  // res.sendFile(path.join(__dirname + 'app/index.html'));
+
+});
