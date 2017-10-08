@@ -9,8 +9,11 @@ var TaskSchema = new Schema({
     trim: true
   },
   
-  completeBy: {
+  date: {
     type: Date
+  },
+  completed: {
+  	type: Boolean
   }
 });
 
