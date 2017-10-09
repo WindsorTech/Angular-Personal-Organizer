@@ -1,16 +1,31 @@
 {
-  "name": "AngularJS-Homework",
+  "name": "angular-personal-organizer",
   "version": "1.0.0",
-  "description": "",
+  "description": "A personal organizer by WindsorTech",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
-  "author": "",
+  "author": "WindsorTech",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.17.0",
     "express": "^4.14.1",
     "mongoose": "^4.11.10"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/windsor80/Angular-Personal-Organizer.git"
+  },
+  "keywords": [
+    "angular",
+    "todo",
+    "list"
+  ],
+  "bugs": {
+    "url": "https://github.com/windsor80/Angular-Personal-Organizer/issues"
+  },
+  "homepage": "https://github.com/windsor80/Angular-Personal-Organizer#readme"
 }
