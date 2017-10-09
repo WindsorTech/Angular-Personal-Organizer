@@ -23,8 +23,45 @@ var postRoute = require("./api/post-tasks.js")(app);
 var putRoute = require("./api/update-tasks.js")(app);
 var deleteRoute = require("./api/delete-tasks.js")(app);
 
+
+
+// Database Routes
+
+app.get("/api/todos", function(req, res) {
+
+	Todo.find({}, function(err, data){
+        if (err) return handleError(err); 
+          	res.json(data);
+    });
+
+});
+
+app.put("/api/todo", function(req, res) {
+
+	 Todo.findByIdAndUpdate(req.body._id, {completed: req.body.completed}, function(err, post){
+          if(err) return next(err);
+            console.log(post);
+            res.send(200);
+        });
+
+});
+
+app.post("/api/todo", function(req, res) {
+
+	   var newToDo = new ToDo({
+            todo: req.body.todo,
+            completeBy: req.body.completeBy
+        });
+
+	    newToDo.save(function(err, newTodo){
+            if (err) return handleError(err);
+            res.send(200);
+        });
+
+});
+
 //SERVER PORT
 var port = process.env.port || 3000;
 app.listen(port, function() {
-    console.log("YES! The App is running on port", port);
+    console.log("App running on port:", port);
 }); 
