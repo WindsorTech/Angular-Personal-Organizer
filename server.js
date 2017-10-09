@@ -10,7 +10,12 @@ var Todo = require('./db/task-database.js');
 // This directs Express to the Angular App
 app.use(express.static(__dirname + "/app"));
 
-
+// Body Parser
+app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.json());
+app.use(bodyParser.json({ type: 'application/*+json' }));
+app.use(bodyParser.raw({ type: 'application/vnd.custom-type' }));
+app.use(bodyParser.text({ type: 'text/html' }));
 
 // Require Database Routes Files
 var getRoute = require("./api/get-tasks.js")(app);
