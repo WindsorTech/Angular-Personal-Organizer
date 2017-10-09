@@ -1,5 +1,7 @@
 var mongoose = require("mongoose");
 
+mongoose.Promise = Promise;
+
 var Schema = mongoose.Schema;
 
 var TaskSchema = new Schema({
@@ -7,8 +9,7 @@ var TaskSchema = new Schema({
   todo: {
     type: String,
     trim: true
-  },
-  
+  },  
   date: {
     type: Date
   },
@@ -17,8 +18,6 @@ var TaskSchema = new Schema({
   }
 });
 
-
-var Todo = mongoose.model("Todo", TaskSchema);
-
+var Todo = mongoose.model('Todo', TaskSchema);
 
 module.exports = Todo;
