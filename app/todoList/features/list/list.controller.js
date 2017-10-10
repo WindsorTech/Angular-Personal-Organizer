@@ -5,7 +5,11 @@ angular
 function ListCtrl(library) {
     var vm = this; 
 
-    vm.tasks = library.tasks;
+    //vm.tasks = library.tasks;
+
+    vm.tasks = [];
+
+    library.getTask(vm.tasks);
 
 }
 
