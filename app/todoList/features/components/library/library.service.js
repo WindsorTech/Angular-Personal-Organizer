@@ -9,7 +9,7 @@ function LibraryService($http) {
 
 	$http({
 		method: 'GET',
-		url: 'http://localhost:3000/library'
+		url: '/api/todos'
 	}).then(function(response){
 		response.data.forEach(function(item) {
 			tasks.push(item);
@@ -20,7 +20,7 @@ function LibraryService($http) {
 		tasks.push(taskData);
 		$http({
 			method: 'POST',
-			url: 'http://localhost:3000/library',
+			url: '/api/todo',
 			data: taskData
 		}).then(function(response){
 	
