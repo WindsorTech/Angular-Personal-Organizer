@@ -7,7 +7,7 @@ function LibraryService($http) {
 
 	var tasks = [];
 
-	function getTask(library) {
+	function getTask(taskData) {
 		$http({
 			method: 'GET',
 			url: '/api/todos'
