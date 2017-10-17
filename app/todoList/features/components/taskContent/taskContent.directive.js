@@ -17,6 +17,4 @@ function TaskContent() {
 
 function TaskContentCtrl($scope, library) {
 
-	TaskSchema = {};
-
 }
