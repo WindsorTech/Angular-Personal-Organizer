@@ -5,7 +5,7 @@ angular
 
 function LibraryService($http) {
 
-	var tasks = [];
+	//var tasks = [];
 
 	function getTask(taskData) {
 		$http({
@@ -13,13 +13,13 @@ function LibraryService($http) {
 			url: '/api/todos'
 		}).then(function(response){
 			response.data.forEach(function(item) {
-				library.push(item);
+				taskData.push(item);
 			});
+			console.log(taskData);
 		});
 	}
 
 	function addTask(taskData) {
-		tasks.push(taskData);
 		$http({
 			method: 'POST',
 			url: '/api/todo',
@@ -30,7 +30,6 @@ function LibraryService($http) {
 	}
 
 	return {
-		tasks: tasks,
 		getTask: getTask,
 		addTask: addTask
 	}
