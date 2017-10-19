@@ -5,7 +5,6 @@ angular
 
 function LibraryService($http) {
 
-	//var tasks = [];
 
 	function getTask(taskData) {
 		$http({

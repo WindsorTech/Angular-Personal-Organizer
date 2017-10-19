@@ -4,6 +4,8 @@
    <tr class="info">
     <td> <b>Task:</b> {{TaskContentVM.taskData.todo}}</td>
     <td><b>Due Date:</b> {{TaskContentVM.taskData.date | date:'MM-dd-yyyy'}}</td>
-    <td><input type="checkbox"><i> mark as completed</i></td>
+    <td><input type="checkbox"><i> completed</i></td>
+    <td><button class="btn-xs btn-info">Edit</button></td>
+    <td><button class="btn-xs btn-danger">Delete</button></td>
    </tr>
 </table>
