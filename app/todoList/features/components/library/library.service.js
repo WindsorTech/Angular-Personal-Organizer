@@ -28,8 +28,18 @@ function LibraryService($http) {
 		});
 	}
 
+	function deleteTask(taskData){
+		$http({
+				method: 'DELETE',
+				url: '/api/todos/' + taskData
+            }).then(function (err, res) {
+                if (err) throw err;
+            })
+	}
+
 	return {
 		getTask: getTask,
-		addTask: addTask
+		addTask: addTask,
+		deleteTask: deleteTask
 	}
 }
