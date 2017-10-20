@@ -59,11 +59,6 @@ button {
     text-align: center;
 }
 
-/* To ease up layouting a little, I use flexbox */
-.flex {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    flex-wrap: wrap;
-    height: 100%;
+.completed {
+    font-size: 16px;
+}
