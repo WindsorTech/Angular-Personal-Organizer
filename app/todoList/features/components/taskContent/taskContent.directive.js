@@ -19,9 +19,9 @@ function TaskContentCtrl($scope, library) {
 
 	var vm = this;
 
+
 	vm.delete = function(){
 		var id = vm.taskData._id;
-		console.log(id);
 		library.deleteTask(id);
 	};
 

@@ -8,7 +8,7 @@ var Promise = require('bluebird');
 mongoose.Promise = Promise;
 
 module.exports = function (app) {
-    app.delete('/api/table/:_id', function (req, res) {
+    app.delete('/api/todos/:_id', function (req, res) {
         console.log(req.params._id);
         ToDo.findByIdAndRemove(req.params._id, function (err, todo) {
             if(err) return (err);

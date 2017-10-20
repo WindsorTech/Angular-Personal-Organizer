@@ -5,6 +5,16 @@ angular
 
 function LibraryService($http) {
 
+	function addTask(taskData) {
+		$http({
+			method: 'POST',
+			url: '/api/todo',
+			data: taskData
+		}).then(function(response){
+	
+		});
+	}
+
 
 	function getTask(taskData) {
 		$http({
@@ -14,17 +24,6 @@ function LibraryService($http) {
 			response.data.forEach(function(item) {
 				taskData.push(item);
 			});
-			console.log(taskData);
-		});
-	}
-
-	function addTask(taskData) {
-		$http({
-			method: 'POST',
-			url: '/api/todo',
-			data: taskData
-		}).then(function(response){
-	
 		});
 	}
 
