@@ -12,7 +12,8 @@
 
          <!-- SECTION DIVISION  -->
          <task-content ng-repeat="task in ListVM.tasks"
-                       task-data="task">
+                       task-data="task"
+                       ng-if="task.completed === false">
                        {{task}}
          </task-content>
 

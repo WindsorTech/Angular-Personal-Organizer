@@ -19,12 +19,19 @@ function TaskContentCtrl($scope, library) {
 
 	var vm = this;
 
-
 	vm.delete = function(){
 		var id = vm.taskData._id;
 		library.deleteTask(id);
 	};
 
-	
+	vm.updateTask = function(){
+		var update = {
+			_id: vm.taskData._id,
+			completed: vm.taskData.completed
+		};
+		console.log(update);
+		library.updateTask(update);
+	};
+
 
 }

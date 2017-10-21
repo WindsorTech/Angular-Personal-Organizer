@@ -9,6 +9,10 @@ function ListCtrl(library) {
 
     library.getTask(vm.tasks);
 
+    vm.update = function(id) {
+		library.updateTask(id, true)
+	}
+
 }
 
 

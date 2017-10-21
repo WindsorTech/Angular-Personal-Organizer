@@ -33,12 +33,23 @@ function LibraryService($http) {
 				url: '/api/todos/' + taskData
             }).then(function (err, res) {
                 if (err) throw err;
-            })
+            });
+	}
+
+	function updateTask (taskData) {
+		$http({
+				method: 'PUT',
+				url: '/api/todo',
+				data: taskData
+			}).then(function(err, response){
+				if (err) throw err;
+			});
 	}
 
 	return {
 		getTask: getTask,
 		addTask: addTask,
-		deleteTask: deleteTask
+		deleteTask: deleteTask,
+		updateTask: updateTask
 	}
 }

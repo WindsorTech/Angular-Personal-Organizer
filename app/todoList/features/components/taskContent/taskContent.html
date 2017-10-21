@@ -4,7 +4,10 @@
    <tr class="info">
     <td> <b>Task:</b> {{TaskContentVM.taskData.todo}}</td>
     <td><b>Due Date:</b> {{TaskContentVM.taskData.date | date:'MM-dd-yyyy'}}</td>
-    <td class="completed"><input type="checkbox"> <i>completed</i></td>
+    <td class="completed"><input type="checkbox"
+    	ng-model="TaskContentVM.taskData.completed"
+    	ng-click="TaskContentVM.updateTask(TaskContentVM.taskData._id)"> 
+    	<i>completed</i></td>
     <td><button class="btn-xs btn-info">Edit</button></td>
     <td><button class="btn-xs btn-danger" ng-click="TaskContentVM.delete(TaskContentVM.taskData._id)">Delete</button></td>
    </tr>
