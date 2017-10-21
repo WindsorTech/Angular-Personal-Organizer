@@ -36,7 +36,7 @@ function LibraryService($http) {
             });
 	}
 
-	function updateTask (taskData) {
+	function updateTask(taskData) {
 		$http({
 				method: 'PUT',
 				url: '/api/todo',

@@ -29,7 +29,6 @@ function TaskContentCtrl($scope, library) {
 			_id: vm.taskData._id,
 			completed: vm.taskData.completed
 		};
-		console.log(update);
 		library.updateTask(update);
 	};
 
