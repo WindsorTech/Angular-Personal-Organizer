@@ -35,5 +35,14 @@ function TaskContentCtrl($scope, library) {
 		library.updateTask(update);
 	};
 
+	vm.editTask = function(){
+		var editInfo = {
+			todo: vm.taskData.todo,
+			date: vm.taskData.date
+		};
+		library.updateTask(editInfo);
+		console.log(editInfo);
+	}
+
 
 }
