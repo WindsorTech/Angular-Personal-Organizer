@@ -30,19 +30,12 @@ function TaskContentCtrl($scope, library) {
 	vm.updateTask = function(){
 		var update = {
 			_id: vm.taskData._id,
-			completed: vm.taskData.completed
-		};
-		library.updateTask(update);
-	};
-
-	vm.editTask = function(){
-		var editInfo = {
+			completed: vm.taskData.completed,
 			todo: vm.taskData.todo,
 			date: vm.taskData.date
 		};
-		library.updateTask(editInfo);
-		console.log(editInfo);
-	}
+		library.updateTask(update);
+	};
 
 
 }
