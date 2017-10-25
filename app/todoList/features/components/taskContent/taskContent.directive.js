@@ -37,5 +37,14 @@ function TaskContentCtrl($scope, library) {
 		library.updateTask(update);
 	};
 
+	vm.cancelEdit = function() {
+		
+		vm.taskData = {
+   			todo: vm.taskData.todo,
+   			date: vm.taskData.date
+   		}
+	}
+
+
 
 }
