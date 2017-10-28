@@ -1,9 +1,9 @@
 angular
-    .module('todoList.create') // No array, as we are "extending" the module
-    .controller('CreateCtrl', CreateCtrl); // Define our controller (Notice the naming convention - uppercase first letter, Ctrl suffix)
+    .module('todoList.create') 
+    .controller('CreateCtrl', CreateCtrl); 
 
 function CreateCtrl($scope, library, $stateParams) {
-    var vm = this; // vm stands for View Model - anything on "the vm" is exposed to the view
+    var vm = this;
 
     resetView();
 

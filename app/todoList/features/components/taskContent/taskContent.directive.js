@@ -27,7 +27,8 @@ function TaskContentCtrl($scope, library) {
 		$scope.erased = true; 
 	};
 
-	vm.updateTask = function(){
+ 
+	vm.updateTask = function () {
 		var update = {
 			_id: vm.taskData._id,
 			completed: vm.taskData.completed,
@@ -35,16 +36,15 @@ function TaskContentCtrl($scope, library) {
 			date: vm.taskData.date
 		};
 		library.updateTask(update);
-	};
 
-	vm.cancelEdit = function() {
-		
-		vm.taskData = {
-   			todo: vm.taskData.todo,
-   			date: vm.taskData.date
-   		}
 	}
 
+	vm.cancelEdit = function() {
 
+		vm.taskData = {
+			todo: vm.taskData.todo,
+			date: vm.taskData.date
+		}
+	};
 
 }

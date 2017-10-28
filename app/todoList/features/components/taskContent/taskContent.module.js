@@ -1,6 +1,6 @@
 angular
 	.module('todoList.component.taskContent', [
 	
-		'todoList.component.library'
+		'todoList.component.library',
 
 	]);
