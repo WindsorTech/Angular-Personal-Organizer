@@ -21,10 +21,6 @@ function TaskContentCtrl($scope, library, $state) {
 
 	$scope.edit = false;
 
-	vm.reloadRoute = function() {
-	   $state.reload();
-	}
-
 	vm.delete = function(){
 		var id = vm.taskData._id;
 		library.deleteTask(id);
@@ -41,12 +37,8 @@ function TaskContentCtrl($scope, library, $state) {
 		library.updateTask(update);
 	}
 
-	vm.cancelEdit = function() {
-
-		vm.taskData = {
-			todo: vm.taskData.todo,
-			date: vm.taskData.date
-		}
-	};
+	vm.reloadView = function() {
+	   $state.reload();
+	}
 
 }
