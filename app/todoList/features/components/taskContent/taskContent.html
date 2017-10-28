@@ -14,16 +14,17 @@
 
     <td class="show-mode" ng-show="!TaskContentVM.taskData.edit"><button class="btn-xs btn-info" ng-click="TaskContentVM.taskData.edit=true">Edit</button></td>
 
-    <td class="show-mode" ng-show="!TaskContentVM.taskData.edit"><button class="btn-xs btn-danger" ng-click="TaskContentVM.delete(TaskContentVM.taskData._id)">Delete</button></td>
+    <td class="show-mode" ng-show="!TaskContentVM.taskData.edit"><button class="btn-xs btn-danger" ng-click="TaskContentVM.delete(TaskContentVM.taskData._id);TaskContentVM.reloadRoute()">Delete</button></td>
 
     <td class="edit-mode" ng-show="TaskContentVM.taskData.edit">
-      <b>Edit Task:</b> <input class="edit-input" type="text" ng-model="TaskContentVM.taskData.todo" placeholder="{{TaskContentVM.taskData.todo}}" align="center" maxlength="20">
+      <b>Edit Task:</b> <input type="text" ng-model="TaskContentVM.taskData.todo" placeholder="{{TaskContentVM.taskData.todo}}" align="center" maxlength="20">
 
-      <b>Due Date:</b> <input class="edit-date" type="date" ng-model="TaskContentVM.taskData.date">
+      <b>Due Date:</b> <input type="date" ng-model="TaskContentVM.taskData.date">
 
-      <button class="btn-xs btn-success" ng-click="TaskContentVM.taskData.edit=false;TaskContentVM.updateTask(TaskContentVM.taskData._id)">Save Task</button>
+      <button class="btn-xs btn-success" ng-click="TaskContentVM.taskData.edit=false;TaskContentVM.updateTask(TaskContentVM.taskData._id);TaskContentVM.reloadRoute()">Save Task</button>
 
-      <button type="button" class="btn-xs btn-danger" ng-click="TaskContentVM.taskData.edit=false;TaskContentVM.cancelEdit(TaskContentVM.taskData._id)">Cancel</button>
+    
+      <button type="button" class="btn-xs btn-danger" ng-click="TaskContentVM.taskData.edit=false;TaskContentVM.cancelEdit(TaskContentVM.taskData._id);TaskContentVM.reloadRoute()">Cancel</button>
     </td>
 
    </tr>

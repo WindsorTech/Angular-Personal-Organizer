@@ -15,11 +15,15 @@ function TaskContent() {
 	}
 }
 
-function TaskContentCtrl($scope, library) {
+function TaskContentCtrl($scope, library, $state) {
 
 	var vm = this;
 
 	$scope.edit = false;
+
+	vm.reloadRoute = function() {
+	   $state.reload();
+	}
 
 	vm.delete = function(){
 		var id = vm.taskData._id;
@@ -27,7 +31,6 @@ function TaskContentCtrl($scope, library) {
 		$scope.erased = true; 
 	};
 
- 
 	vm.updateTask = function () {
 		var update = {
 			_id: vm.taskData._id,
@@ -36,7 +39,6 @@ function TaskContentCtrl($scope, library) {
 			date: vm.taskData.date
 		};
 		library.updateTask(update);
-
 	}
 
 	vm.cancelEdit = function() {
