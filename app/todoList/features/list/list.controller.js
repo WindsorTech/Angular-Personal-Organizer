@@ -9,6 +9,8 @@ function ListCtrl(library) {
 
     library.getTask(vm.tasks);
 
+    console.log(vm.tasks);
+
 }
 
 

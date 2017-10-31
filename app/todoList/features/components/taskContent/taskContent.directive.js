@@ -21,9 +21,8 @@ function TaskContentCtrl($scope, library, $state) {
 
 	$scope.edit = false;
 
-	vm.today = new Date();
-
-	console.log(vm.today);
+	// vm.today = new Date();
+	// console.log(vm.today);
 
 	vm.delete = function(){
 		var id = vm.taskData._id;
