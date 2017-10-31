@@ -59,6 +59,16 @@ button {
     text-align: center;
 }
 
+.head {
+    display: block;
+    margin: auto;
+    width: 80%;
+    padding-top: 10px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+
 .completed {
     font-size: 16px;
 }

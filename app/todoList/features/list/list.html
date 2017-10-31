@@ -10,11 +10,9 @@
             </ul>       
          </div>
 
-         <!-- SECTION DIVISION  -->
-         <task-content ng-repeat="task in ListVM.tasks"
+            <task-content ng-repeat="task in ListVM.tasks"
                        task-data="task"
-                       ng-if="task.completed === false">
-                       {{task}}
-         </task-content>
+                       ng-if="task.completed === false"> 
+            </task-content>
 
     </div>
