@@ -11,6 +11,9 @@ function ListCtrl(library) {
 
     console.log(vm.tasks);
 
+ //    vm.today = new Date().toISOString();
+	// console.log(vm.today);
+
 }
 
 

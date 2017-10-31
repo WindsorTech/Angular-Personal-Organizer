@@ -2,7 +2,7 @@
        style="width:80%" align="center" 
        ng-if="TaskContentVM.taskData.todo !== undefined || TaskContentVM.taskData.date !== undefined">
 
-    <tr class="info" ng-hide="erased">
+  <tr class="info" ng-hide="erased">
 
     <td class="show-mode" ng-show="!TaskContentVM.taskData.edit"> <b>Task:</b> {{TaskContentVM.taskData.todo}}</td>
 
@@ -28,5 +28,5 @@
       <button type="button" class="btn-xs btn-danger" ng-click="TaskContentVM.taskData.edit=false;TaskContentVM.reloadView()">Cancel</button>
     </td>
 
-   </tr>
+  </tr>
 </table>
