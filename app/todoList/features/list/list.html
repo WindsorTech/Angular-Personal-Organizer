@@ -10,9 +10,11 @@
             </ul>       
          </div>
 
+         <div class="panel">        
             <task-content ng-repeat="task in ListVM.tasks"
                        task-data="task"
                        ng-if="task.completed === false"> 
             </task-content>
+         </div>
 
     </div>
