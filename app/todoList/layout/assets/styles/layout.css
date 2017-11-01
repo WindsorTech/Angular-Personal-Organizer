@@ -79,16 +79,14 @@ button {
     width: 95%;
 }
 
-table {
-    width: 100px;
-}
-
 h2 {
     font-size: 35px;
 }
 
 td {
     display: block;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .btn-xs {
