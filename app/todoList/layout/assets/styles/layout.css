@@ -18,12 +18,12 @@ body {
     font-size: 16px;
 }
 
-.nav-tabs {
+.nav-pills {
         margin-top: 30px;
         text-align:center;
     }
 
-.nav-tabs > li {
+.nav-pills > li {
     float:none;
     display:inline-block;
 }
@@ -72,3 +72,7 @@ button {
 .completed {
     font-size: 16px;
 }
+
+@media only screen and (max-width: 480px) {}
+
+@media only screen and (min-width: 481px) and (max-width: 853px) {}
