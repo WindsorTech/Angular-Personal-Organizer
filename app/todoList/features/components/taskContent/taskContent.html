@@ -4,16 +4,16 @@
 
   <tr class="info" ng-hide="erased">
 
-    <td class="show-mode" ng-show="!TaskContentVM.taskData.edit"> <b>Task:</b> {{TaskContentVM.taskData.todo}}</td>
+    <td class="show-mode created" ng-show="!TaskContentVM.taskData.edit"> <b>Task:</b> {{TaskContentVM.taskData.todo}}</td>
 
-    <td class="show-mode" ng-show="!TaskContentVM.taskData.edit"><b>Due Date:</b> {{TaskContentVM.taskData.date | date:'MM-dd-yyyy'}}</td>
+    <td class="show-mode created" ng-show="!TaskContentVM.taskData.edit"><b>Due Date:</b> {{TaskContentVM.taskData.date | date:'MM-dd-yyyy'}}</td>
 
-    <td class="completed show-mode"><input type="checkbox"
+    <td class="completed show-mode created"><input type="checkbox"
     	ng-model="TaskContentVM.taskData.completed"
     	ng-click="TaskContentVM.updateTask(TaskContentVM.taskData._id)" ng-show="!TaskContentVM.taskData.edit"> 
     	<i ng-show="!TaskContentVM.taskData.edit">completed</i></td>
 
-    <td class="show-mode" ng-show="!TaskContentVM.taskData.edit"><button class="btn-xs btn-info" ng-click="TaskContentVM.taskData.edit=true">Edit</button></td>
+    <td class="show-mode created" ng-show="!TaskContentVM.taskData.edit"><button class="btn-xs btn-info" ng-click="TaskContentVM.taskData.edit=true">Edit</button></td>
 
     <td class="show-mode" ng-show="!TaskContentVM.taskData.edit"><button class="btn-xs btn-danger" ng-click="TaskContentVM.delete(TaskContentVM.taskData._id);TaskContentVM.reloadView()">Delete</button></td>
 
