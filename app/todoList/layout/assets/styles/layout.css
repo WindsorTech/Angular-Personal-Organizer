@@ -88,7 +88,8 @@ td {
 }
 
 tr {
-    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .btn-xs {
@@ -104,4 +105,10 @@ tr {
 
 }
 
-@media only screen and (min-width: 481px) and (max-width: 853px) {}
+@media only screen and (min-width: 481px) and (max-width: 853px) {
+
+.container {
+    width: 95%;
+}
+
+}
