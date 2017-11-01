@@ -6,4 +6,6 @@
 
 ### Try the Angular Personal Organizer app right here: https://personal-organizer.herokuapp.com/
 
-![InfoMedia Search](https://github.com/windsor80/portfolio/blob/master/images/infomedia.jpg?raw=true)
+![Angular Personal Organizer](https://github.com/windsor80/Angular-Personal-Organizer/blob/master/app/todoList/layout/assets/images/angular-organizer-print1.jpg?raw=true)
+
+![Angular Personal Organizer](https://github.com/windsor80/Angular-Personal-Organizer/blob/master/app/todoList/layout/assets/images/angular-organizer-print2.jpg?raw=true)
