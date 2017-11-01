@@ -80,13 +80,12 @@ button {
 }
 
 h2 {
-    font-size: 35px;
+    font-size: 33px;
 }
 
 td {
     display: block;
-    padding-left: 200px;
-    padding-right: 200px;
+    font-size: 26px;
 }
 
 .btn-xs {
