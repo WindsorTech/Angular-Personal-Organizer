@@ -93,7 +93,11 @@ tr {
 
 .btn-xs {
     width: 70%;
-    height: 80%;
+    height: 200%;
+}
+
+.btn-save {
+    padding-bottom: 10px;
 }
 
 

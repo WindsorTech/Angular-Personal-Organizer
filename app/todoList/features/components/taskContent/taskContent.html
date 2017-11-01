@@ -22,7 +22,7 @@
 
       <b>Due Date:</b> <input type="date" ng-model="TaskContentVM.taskData.date">
 
-      <button class="btn-xs btn-success" ng-click="TaskContentVM.taskData.edit=false;TaskContentVM.updateTask(TaskContentVM.taskData._id);TaskContentVM.reloadView()">Save Task</button>
+      <button class="btn-xs btn-success btn-save" ng-click="TaskContentVM.taskData.edit=false;TaskContentVM.updateTask(TaskContentVM.taskData._id);TaskContentVM.reloadView()">Save Task</button>
 
     
       <button type="button" class="btn-xs btn-danger" ng-click="TaskContentVM.taskData.edit=false;TaskContentVM.reloadView()">Cancel</button>
