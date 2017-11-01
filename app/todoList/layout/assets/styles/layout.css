@@ -79,17 +79,18 @@ button {
     width: 95%;
 }
 
-title {
-    font-size: 80px;
+h2 {
+    font-size: 60px;
 }
 
 td {
     display: block;
 }
 
-.info {
-    width: 200%;
+tr {
+    width: 100%;
 }
+
 
 }
 
