@@ -102,7 +102,7 @@ td {
 }
 
 .create-btn {
-    margin-top: 10px;
+    margin-top: 15px;
 }
 
 
@@ -116,6 +116,10 @@ td {
 
 h2 {
     font-size: 35px;
+}
+
+.create-btn {
+    margin-top: 15px;
 }
 
 }
