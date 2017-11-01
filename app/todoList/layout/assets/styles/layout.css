@@ -79,17 +79,17 @@ button {
     width: 95%;
 }
 
+table {
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
 h2 {
     font-size: 35px;
 }
 
 td {
     display: block;
-}
-
-tr {
-    padding-left: 10px;
-    padding-right: 10px;
 }
 
 .btn-xs {
@@ -108,7 +108,7 @@ tr {
 @media only screen and (min-width: 481px) and (max-width: 853px) {
 
 .container {
-    width: 95%;
+    width: 98%;
 }
 
 }
