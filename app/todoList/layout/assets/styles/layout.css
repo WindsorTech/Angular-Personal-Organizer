@@ -79,6 +79,10 @@ button {
     width: 95%;
 }
 
+.info {
+    width: 80%;
+}
+
 }
 
 @media only screen and (min-width: 481px) and (max-width: 853px) {}
