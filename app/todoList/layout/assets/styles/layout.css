@@ -80,7 +80,7 @@ button {
 }
 
 h2 {
-    font-size: 30px;
+    font-size: 40px;
 }
 
 td {
@@ -88,6 +88,10 @@ td {
 }
 
 tr {
+    width: 100%;
+}
+
+.btn-xs {
     width: 100%;
 }
 
