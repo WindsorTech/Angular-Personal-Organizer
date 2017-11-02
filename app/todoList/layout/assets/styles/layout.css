@@ -87,10 +87,6 @@ h2 {
     font-size: 33px;
 }
 
-table {
-    width: 400px;
-}
-
 td {
     display: block;
 }
@@ -127,9 +123,14 @@ td {
 }
 
 .btn-xs {
-    width: 60%;
+    width: 50%;
     padding-top: 5px;
     padding-bottom: 5px;
+}
+
+.btn-save {
+    margin-top: 10px;
+    margin-bottom: 8px;
 }
 
 .create-btn {
