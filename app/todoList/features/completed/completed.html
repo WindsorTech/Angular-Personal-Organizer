@@ -13,6 +13,17 @@
          <task-content ng-repeat="task in CompletedVM.tasks"
               task-data="task"
               ng-if="task.completed === true"> 
-                {{task}} </task-content>
+                {{task}} 
+        </task-content>
+
+        <div class="page-header" align="center">
+            <h2>AngularJS Personal Organizer</h2>
+            <p class="copyright">by WindsorTech</p>
+            <ul class="nav nav-pills">
+                <li role="presentation" class="active"><a ui-sref="list">List All Tasks</a></li>
+                <li role="presentation"><a ui-sref="create">Create Task</a></li>
+                <li role="presentation"><a ui-sref="completed">View Completed Tasks</a></li>
+            </ul>       
+         </div>
 
     </div>
