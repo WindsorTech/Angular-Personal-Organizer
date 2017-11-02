@@ -49,6 +49,7 @@ ul {
     margin-top: 10px;
 }
 
+
 input {
     text-align: center;
     font-size: 16px;
@@ -56,6 +57,16 @@ input {
 
 button {
     margin-top: 5px;
+}
+
+.btn-xs {
+    width: 80%;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+.edit-btn {
+    width: 9%;  
 }
 
 .info {
