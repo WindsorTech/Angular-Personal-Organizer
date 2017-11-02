@@ -81,13 +81,11 @@ button {
 
 .container {
     width: 95%;
-    display: table-cell;
-    vertical-align: middle;
 }
 
 .content {
     width: 120%;
-    display: inline-block;
+    margin: auto;
 }
 
 h2 {
