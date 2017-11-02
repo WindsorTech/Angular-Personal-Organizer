@@ -85,6 +85,8 @@ button {
 
 .content {
     width: 120%;
+    float:none;
+    display:inline-block;
 }
 
 h2 {
