@@ -120,7 +120,7 @@ h2 {
 
 td {
     display: block;
-    width: 100%;
+    clear:both;
 }
 
 .btn-xs {
@@ -137,5 +137,6 @@ td {
 .create-btn {
     margin-top: 15px;
 }
+
 
 }

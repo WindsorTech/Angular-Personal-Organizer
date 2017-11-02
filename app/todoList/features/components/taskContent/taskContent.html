@@ -18,7 +18,7 @@
     <td class="show-mode" ng-show="!TaskContentVM.taskData.edit"><button class="btn-xs btn-danger" ng-click="TaskContentVM.delete(TaskContentVM.taskData._id);TaskContentVM.reloadView()">Delete</button></td>
 
     <td class="edit-mode" ng-show="TaskContentVM.taskData.edit">
-      <b>Edit Task:</b> <input type="text" ng-model="TaskContentVM.taskData.todo" placeholder="{{TaskContentVM.taskData.todo}}" align="center" maxlength="20">
+      <b>Edit Task:</b> <input type="text" class="input-edit" ng-model="TaskContentVM.taskData.todo" placeholder="{{TaskContentVM.taskData.todo}}" align="center" maxlength="20">
 
       <b>Due Date:</b> <input type="date" ng-model="TaskContentVM.taskData.date">
 
