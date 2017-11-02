@@ -12,8 +12,7 @@ body {
         margin-top: 50px;
     }
 
-.alert-success, 
-.alert-danger {
+.alert-dismissible {
     width: 25%;
     font-size: 16px;
 }
@@ -96,8 +95,7 @@ td {
     display: block;
 }
 
-.alert-success, 
-.alert-danger {
+.alert-dismissible {
     width: 100%;
 }
 
@@ -136,8 +134,7 @@ td {
     display: block;
 }
 
-.alert-success, 
-.alert-danger {
+.alert-dismissible {
     width: 60%;
 }
 
