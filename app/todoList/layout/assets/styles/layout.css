@@ -122,6 +122,10 @@ h2 {
     font-size: 35px;
 }
 
+td {
+    display: block;
+}
+
 .btn-xs {
     width: 100%;
     padding-top: 5px;
