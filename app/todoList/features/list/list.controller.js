@@ -11,13 +11,15 @@ function ListCtrl(library) {
 
     console.log(vm.tasks);
 
- 	//vm.today = new Date();
+    var datetoday = new Date;
 
- 	//vm.today.setHours(0,0,0,0);
+    datetoday.setHours(0,0,0,0);
 
- 	// vm.today.toISOString();
+    var datestring = datetoday.toISOString();
 
-	//console.log(vm.today);
+    vm.today = datestring;
+
+    console.log(vm.today);
 
 }
 

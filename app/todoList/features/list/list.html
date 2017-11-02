@@ -12,10 +12,33 @@
 
         <div class="content" align="center">
                
+            <div class="overdue">
+                <div class="alert-danger head">OVERDUE</div>
+                <br>
             <task-content ng-repeat="task in ListVM.tasks"
                        task-data="task"
-                       ng-if="task.completed === false"> 
-            </task-content> 
+                       ng-if="task.completed === false && task.date < ListVM.today"> 
+            </task-content>
+            </div>
+    
+            <div class="today">
+            <div class="alert-warning head">DUE TODAY</div>
+                <br>
+            <task-content ng-repeat="task in ListVM.tasks"
+                       task-data="task"
+                       ng-if="task.completed === false  && task.date == ListVM.today"> 
+            </task-content>
+            </div>
+
+            <div class="later">
+            <div class="alert-success head">DUE LATER</div>
+                <br>
+            <task-content ng-repeat="task in ListVM.tasks"
+                       task-data="task"
+                       ng-if="task.completed === false && task.date > ListVM.today"> 
+            </task-content>
+            </div>
+
 
         </div>
 
