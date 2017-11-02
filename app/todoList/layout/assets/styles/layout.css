@@ -85,8 +85,7 @@ button {
 
 .content {
     width: 300px;
-    margin: 0 auto;
-    vertical-align: middle;
+    margin-left: 0px;
 }
 
 h2 {
