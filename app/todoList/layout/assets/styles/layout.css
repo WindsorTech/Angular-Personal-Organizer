@@ -110,7 +110,6 @@ td {
     margin-top: 15px;
 }
 
-
 }
 
 @media only screen and (min-width: 481px) and (max-width: 853px) {
@@ -121,6 +120,12 @@ td {
 
 h2 {
     font-size: 35px;
+}
+
+.btn-xs {
+    width: 50%;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
 .create-btn {
