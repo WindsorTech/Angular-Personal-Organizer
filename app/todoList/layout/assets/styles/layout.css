@@ -136,6 +136,11 @@ td {
     display: block;
 }
 
+.alert-success, 
+.alert-danger {
+    width: 100%;
+}
+
 .btn-xs {
     width: 50%;
     padding-top: 5px;
