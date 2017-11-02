@@ -85,8 +85,7 @@ button {
 
 .content {
     width: 300px;
-    display: block;
-    margin: auto;
+    margin: 0 auto;
 }
 
 h2 {
