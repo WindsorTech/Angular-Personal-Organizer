@@ -120,7 +120,6 @@ h2 {
 
 td {
     display: block;
-    clear:both;
 }
 
 .btn-xs {
@@ -138,5 +137,8 @@ td {
     margin-top: 15px;
 }
 
+.input-edit {
+    width: 200px;
+}
 
 }
