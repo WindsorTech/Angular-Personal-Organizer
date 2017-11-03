@@ -15,7 +15,6 @@ function LibraryService($http) {
 		});
 	}
 
-
 	function getTask(taskData) {
 		$http({
 			method: 'GET',

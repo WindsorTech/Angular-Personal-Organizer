@@ -37,7 +37,7 @@ function TaskContentCtrl($scope, library, $state) {
 		library.updateTask(update);
 	}
 
-	vm.updateTask = function () {
+	vm.saveTask = function () {
 		var update = {
 			_id: vm.taskData._id,
 			completed: vm.taskData.completed,
