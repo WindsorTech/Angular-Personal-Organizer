@@ -10,7 +10,16 @@ body {
 .container {
         border-style: double;
         margin-top: 50px;
-    }
+}
+
+.advert {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.mobile-advert {
+    display: none;
+}
 
 .alert-dismissible {
     width: 25%;
@@ -94,6 +103,16 @@ button {
     width: 95%;
 }
 
+.advert {
+    display: none;
+}
+
+.mobile-advert {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}   
+
 .content {
     width: 120%;
     margin-left: -26px;
@@ -137,6 +156,16 @@ td {
 .container {
     width: 98%;
 }
+
+.advert {
+    display: none;
+}
+
+.mobile-advert {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}   
 
 h2 {
     font-size: 35px;

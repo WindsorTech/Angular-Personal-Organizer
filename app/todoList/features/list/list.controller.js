@@ -5,6 +5,8 @@ angular
 function ListCtrl(library) {
     var vm = this; 
 
+    $('.head').hide();
+
     vm.tasks = [];
 
     library.getTask(vm.tasks);
@@ -20,6 +22,18 @@ function ListCtrl(library) {
     vm.today = datestring;
 
     console.log(vm.today);
+
+    vm.showOverdue = function () {
+    	$('.overdue').show();
+    }
+
+    vm.showToday = function () {
+    	$('.today').show();
+    }
+
+    vm.showLater = function () {
+    	$('.later').show();
+    }
 
 }
 

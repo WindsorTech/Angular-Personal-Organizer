@@ -10,7 +10,7 @@
 
     <td class="completed show-mode"><input type="checkbox"
     	ng-model="TaskContentVM.taskData.completed"
-    	ng-click="TaskContentVM.completeTask(TaskContentVM.taskData._id)" ng-show="!TaskContentVM.taskData.edit"> 
+    	ng-click="TaskContentVM.completeTask(TaskContentVM.taskData._id);TaskContentVM.reloadView()" ng-show="!TaskContentVM.taskData.edit"> 
     	<i ng-show="!TaskContentVM.taskData.edit">completed</i></td>
 
     <td class="show-mode" ng-show="!TaskContentVM.taskData.edit"><button class="btn-xs btn-info" ng-click="TaskContentVM.taskData.edit=true">Edit</button></td>
