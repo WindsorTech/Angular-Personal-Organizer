@@ -29,17 +29,18 @@
         <!-- Css Stylesheet -->
         <link rel="stylesheet" href="todoList/layout/assets/styles/layout.css">
     </head>
-    <body ng-app="todoList"> 
-        <!-- Note, this is important, the main module name is the app name -->
 
-        <!-- The ui-view directive is provided by ui-router and is where our main view for our route will be injected -->
+    <!-- Angular main module = App Name-->
+    <body ng-app="todoList"> 
+
+        <!-- Main View -->
         <ui-view></ui-view>
 
         <!-- JQuery Script -->
         <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
 
         <!-- Scripts of the MAIN Module File-->
-         <script src="todoList/todoList.module.js"></script>
+        <script src="todoList/todoList.module.js"></script>
 
         <!-- Scripts of the Create state -->
         <script src="todoList/features/create/create.module.js"></script>
@@ -64,22 +65,6 @@
         <script src="todoList/features/components/library/library.module.js"></script>
         <script src="todoList/features/components/library/library.service.js"></script>
 
-        <!--
-            A note on directory structure and organization. Keeping your Angular code organized and slim
-            is really important. Following the directory structure we have defined and recommend is following
-            recommendations from industry experts and larger organizations and open source projects!
-
-            appName/
-                features/ - All of our "features" of the app
-                    featureName/ - Each feature gets its own space. Features can be (routes, components, services, etc)
-                        featureName.directive.js - If the feature is a directive, you will have this
-                        featureName.service.js - If the feature is a service, you will have this
-                        featureName.controller.js - If the feature is a route/view, you will have this
-                        featureName.route.js - If the feature is a route/view, you will have this
-                        featureName.html - If the feature is a route/view, you will have this
-                        featureName.module.js - Declare the module and its dependencies
-                appName.module.js - Main module declaration for our app
-            index.html - This file
-        -->
     </body>
+
 </html>

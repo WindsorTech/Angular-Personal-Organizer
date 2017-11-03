@@ -1,7 +1,9 @@
+// Require Mongoose
 var mongoose = require("mongoose");
 
 mongoose.Promise = Promise;
 
+// Define Schema to store data
 var Schema = mongoose.Schema;
 
 var TaskSchema = new Schema({

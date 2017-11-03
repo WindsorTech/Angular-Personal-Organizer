@@ -1,5 +1,7 @@
+// Require Mongoose
 var mongoose = require('mongoose');
 
+// Require Database files
 var db = require('./../db/database-connect.js');
 var ToDo = require('./../db/task-database.js');
 
@@ -7,6 +9,7 @@ var ToDo = require('./../db/task-database.js');
 var Promise = require('bluebird');
 mongoose.Promise = Promise;
 
+// Function to Get all items from database
 module.exports = function(app) {
 
 	app.get('/api/todos', function(req, res){
