@@ -2,9 +2,9 @@ angular
 	.module('todoList.component.library')
 	.service('library', LibraryService);
 
-
 function LibraryService($http) {
 
+	// Function with call to to Add task to the database
 	function addTask(taskData) {
 		$http({
 			method: 'POST',
@@ -15,6 +15,7 @@ function LibraryService($http) {
 		});
 	}
 
+	// Function with call to get all Tasks the database
 	function getTask(taskData) {
 		$http({
 			method: 'GET',
@@ -26,6 +27,7 @@ function LibraryService($http) {
 		});
 	}
 
+	// Function with call to delete tasks from the database
 	function deleteTask(taskData){
 		$http({
 				method: 'DELETE',
@@ -35,6 +37,7 @@ function LibraryService($http) {
             });
 	}
 
+	// Function with call to update tasks in the database
 	function updateTask(taskData) {
 		$http({
 				method: 'PUT',
@@ -45,6 +48,7 @@ function LibraryService($http) {
 			});
 	}
 
+	// Return object to expose all functions
 	return {
 		getTask: getTask,
 		addTask: addTask,

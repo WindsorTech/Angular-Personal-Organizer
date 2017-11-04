@@ -5,25 +5,31 @@ angular
 function CreateCtrl($scope, library, $stateParams) {
     var vm = this;
 
+    // Clear fields when task is submitted
     resetView();
 
+    // Hide task submit alerts
     $('.alert-success').hide();
     $('.alert-danger').hide();
 
+    // Get task info from input fields
     vm.task = {
         taskName: $stateParams.taskName,
         dueDate: $stateParams.dueDate
     }
 
-   function resetView() {
+    // Function to clear input fields
+    function resetView() {
    		vm.task = {
    			taskName: undefined,
    			dueDate: undefined
    		}
-   }
+    }
 
-   vm.addTask = function() {
+    // Function to Add tasks into database
+    vm.addTask = function() {
 
+     // Save task if valid info is entered, otherwise display error alert
      if (vm.task.taskName !== undefined && vm.task.dueDate !== undefined) {
       $('.alert-success').show();
       $('.alert-danger').hide();
@@ -35,11 +41,12 @@ function CreateCtrl($scope, library, $stateParams) {
       resetView();
      }
 
-   }
+    }
 
-   $(".close").click(function(){
+    // Close the alerts when 'X' is clicked
+    $(".close").click(function(){
       $('.alert-success').hide();
       $('.alert-danger').hide();
-   });
+    });
     
 }

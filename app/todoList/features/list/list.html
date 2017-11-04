@@ -1,47 +1,47 @@
-    <div class="container">
+<div class="container">
 
-        <div class="page-header" align="center">
-            <h2>AngularJS Personal Organizer</h2>
-            <p class="copyright">by WindsorTech</p>
-            <ul class="nav nav-pills">
-                <li role="presentation" class="active"><a ui-sref="list">List All Tasks</a></li>
-                <li role="presentation"><a ui-sref="create">Create Task</a></li>
-                <li role="presentation"><a ui-sref="completed">View Completed Tasks</a></li>
-            </ul>       
-         </div>
+    <div class="page-header" align="center">
+        <h2>AngularJS Personal Organizer</h2>
+        <p class="copyright">by WindsorTech</p>
+        <ul class="nav nav-pills">
+            <li role="presentation" class="active"><a ui-sref="list">List All Tasks</a></li>
+            <li role="presentation"><a ui-sref="create">Create Task</a></li>
+            <li role="presentation"><a ui-sref="completed">View Completed Tasks</a></li>
+        </ul>       
+    </div>
 
-        <div class="content" align="center">
+    <div class="content" align="center">
                
-            <div>
-                <div class="alert-danger head overdue">OVERDUE</div>
-                <br>
-                <task-content ng-repeat="task in ListVM.tasks"
+        <div>
+            <div class="alert-danger head overdue">OVERDUE</div>
+              <br>
+            <task-content ng-repeat="task in ListVM.tasks"
                        task-data="task"
                        ng-if="task.completed === false && task.date < ListVM.today"
                        ng-init="ListVM.showOverdue()"> 
-                </task-content>
-            </div>
+            </task-content>
+        </div>
     
-            <div>
-                <div class="alert-warning head today">DUE TODAY</div>
-                <br>
-                <task-content ng-repeat="task in ListVM.tasks"
+        <div>
+            <div class="alert-warning head today">DUE TODAY</div>
+              <br>
+            <task-content ng-repeat="task in ListVM.tasks"
                        task-data="task"
                        ng-if="task.completed === false  && task.date == ListVM.today"
                        ng-init="ListVM.showToday()"> 
-                </task-content>
-            </div>
+            </task-content>
+        </div>
 
-            <div>
-                <div class="alert-success head later">DUE LATER</div>
-                <br>
-                <task-content ng-repeat="task in ListVM.tasks"
+        <div>
+            <div class="alert-success head later">DUE LATER</div>
+              <br>
+            <task-content ng-repeat="task in ListVM.tasks"
                        task-data="task"
                        ng-if="task.completed === false && task.date > ListVM.today"
                        ng-init="ListVM.showLater()"> 
-                </task-content>
-            </div>
-
+            </task-content>
         </div>
 
     </div>
+
+</div>

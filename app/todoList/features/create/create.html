@@ -1,38 +1,38 @@
-	 <div class="container">
+<div class="container">
 
-		<div class="page-header" align="center">
-	 	 	<h2>AngularJS Personal Organizer</h2>
-	 	 	<p class="copyright">by WindsorTech</p>
-			<ul class="nav nav-pills">
-	  			<li role="presentation"><a ui-sref="list(task)">List All Tasks</a></li>
-	  			<li role="presentation" class="active"><a ui-sref="create">Create Task</a></li>
-	  			<li role="presentation"><a ui-sref="completed">View Completed Tasks</a></li>
-		 	</ul>	 	
-		 </div>
-
-		 <div class="create" align="center">
-		 		<h3>Add a New Task</h3>
-		 		<form>
-			    What do you want to do?
-			    <br>
-  				<input type="text" ng-model="CreateVM.task.taskName" placeholder="Insert Task Here" align="center" maxlength="20">
-			    <br>
-			    Due Date:
-			    <br>
-			    <input type="date" ng-model="CreateVM.task.dueDate">
-			    <br>
-			    <button type="button" class="btn btn-primary create-btn" ng-click="CreateVM.addTask()">Create Task</button>
-			    </form>
-			    <br>  
-			    <div class="alert alert-dismissible alert-success">
-				  <button type="button" class="close" data-dismiss="alert">&times;</button>
-				  Task successfully created!
-				</div>
-
-				<div class="alert alert-dismissible alert-danger">
-				  <button type="button" class="close" data-dismiss="alert">&times;</button>
-				  Please complete all fields.
-				</div> 
-		</div>
-
+	<div class="page-header" align="center">
+	 	 <h2>AngularJS Personal Organizer</h2>
+	 	 <p class="copyright">by WindsorTech</p>
+		 <ul class="nav nav-pills">
+	  		<li role="presentation"><a ui-sref="list(task)">List All Tasks</a></li>
+	  		<li role="presentation" class="active"><a ui-sref="create">Create Task</a></li>
+	  		<li role="presentation"><a ui-sref="completed">View Completed Tasks</a></li>
+		 </ul>	 	
 	</div>
+
+	<div class="create" align="center">
+		 	<h3>Add a New Task</h3>
+		 	<form>
+				What do you want to do?
+			<br>
+  				<input type="text" ng-model="CreateVM.task.taskName" placeholder="Insert Task Here" align="center" maxlength="20">
+				<br>
+				Due Date:
+				<br>
+				<input type="date" ng-model="CreateVM.task.dueDate">
+				<br>
+				<button type="button" class="btn btn-primary create-btn" ng-click="CreateVM.addTask()">Create Task</button>
+			</form>
+			<br>  
+			<div class="alert alert-dismissible alert-success">
+				<button type="button" class="close" data-dismiss="alert">&times;</button>
+				Task successfully created!
+			</div>
+
+			<div class="alert alert-dismissible alert-danger">
+				<button type="button" class="close" data-dismiss="alert">&times;</button>
+				Please complete all fields.
+			</div> 
+	</div>
+
+</div>

@@ -18,15 +18,15 @@
     <td class="show-mode" ng-show="!TaskContentVM.taskData.edit"><button class="btn-xs btn-danger" ng-click="TaskContentVM.delete(TaskContentVM.taskData._id);TaskContentVM.reloadView()">Delete</button></td>
 
     <td class="edit-mode" ng-show="TaskContentVM.taskData.edit">
-      <b>Edit Task:</b> <input type="text" class="input-edit" ng-model="TaskContentVM.taskData.todo" placeholder="{{TaskContentVM.taskData.todo}}" align="center" maxlength="20">
+        <b>Edit Task:</b> <input type="text" class="input-edit" ng-model="TaskContentVM.taskData.todo" placeholder="{{TaskContentVM.taskData.todo}}" align="center" maxlength="20">
 
-      <b>Due Date:</b> <input type="date" class="edit-date" ng-model="TaskContentVM.taskData.editdate">
+        <b>Due Date:</b> <input type="date" class="edit-date" ng-model="TaskContentVM.taskData.editdate">
 
-      <button class="btn-xs btn-success btn-save edit-btn" ng-click="TaskContentVM.taskData.edit=false;TaskContentVM.saveTask(TaskContentVM.taskData._id);TaskContentVM.reloadView()">Save Task</button>
+        <button class="btn-xs btn-success btn-save edit-btn" ng-click="TaskContentVM.taskData.edit=false;TaskContentVM.saveTask(TaskContentVM.taskData._id);TaskContentVM.reloadView()">Save Task</button>
 
-    
-      <button type="button" class="btn-xs btn-warning edit-btn" ng-click="TaskContentVM.taskData.edit=false;TaskContentVM.reloadView()">Cancel</button>
+        <button type="button" class="btn-xs btn-warning edit-btn" ng-click="TaskContentVM.taskData.edit=false;TaskContentVM.reloadView()">Cancel</button>
     </td>
 
   </tr>
+
 </table>

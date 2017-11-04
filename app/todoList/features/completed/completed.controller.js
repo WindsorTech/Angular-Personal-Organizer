@@ -1,12 +1,14 @@
 angular
-    .module('todoList.completed') // No array, as we are "extending" the module
-    .controller('CompletedCtrl', CompletedCtrl); // Define our controller (Notice the naming convention - uppercase first letter, Ctrl suffix)
+    .module('todoList.completed') 
+    .controller('CompletedCtrl', CompletedCtrl);
 
 function CompletedCtrl($scope, $http) {
     var vm = this; 
 
+    // empty array to be filled with the completed tasks
     vm.tasks = [];
 
+    // Http call to get the completed tasks from database
     $http({
         method: 'GET',
         url: '/api/todos'
